@@ -9,7 +9,7 @@ def dinheiro_inicial():
     m_25 = int(input("Moedas de 25: "))
     m_10 = int(input("Moedas de 10: "))
     m_5 = int(input("Moedas de 5: "))
-    return [c_10, c_5, c_2, c_1, m_50, m_25, m_10, m_5]
+    return [m_5, m_10, m_25, m_50, c_1, c_2, c_5, c_10]
 
 def estoque_inicial():
     q_ref = int(input("Estoque inicial de refrigerante: "))
@@ -31,6 +31,9 @@ def compra_valida(saldo, estoque, preco, cm):
     if preco > saldo:
         return -2
     saldo - preco = troco
+    #[m_5, m_10, m_25, m_50, c_1, c_2, c_5, c_10]
+    #[5, 10, 25, 50, 100, 200, 500, 1000]
+
 
 
 
